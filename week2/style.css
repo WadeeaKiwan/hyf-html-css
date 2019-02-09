@@ -50,14 +50,14 @@ p[dir="rtl"]{
 }
 
 .grid-item{
-    opacity: 0.75;
+    	opacity: 0.75;
 	background-color: white;
 }
 	
 .grid-item:hover{
-    background-color: #ccc;
+    	background-color: #ccc;
 	opacity: 0.90;
-    cursor:pointer;
+    	cursor:pointer;
 	box-shadow: 2px 2px black;
 }
 
@@ -87,7 +87,7 @@ p[dir="rtl"]{
 
 #grid-floats .grid-item{
 	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	float: left;
 	margin: 15px;
@@ -167,7 +167,7 @@ p[dir="rtl"]{
 
 #grid-flex .grid-item{
 	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: calc(50% - 30px);
 	margin: 15px;
