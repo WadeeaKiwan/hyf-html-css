@@ -78,7 +78,10 @@ p.languages{
 .icons{
     text-align: center;
     margin: 30px 0px 30px 0px;
-	text-decoration: none;
+}
+
+.icons a {
+	text-decoration: none;	
 }
 
 .icons i{
@@ -159,7 +162,7 @@ iframe{
 }
 
 li a:hover{
-  color:rgb(249, 132, 74);
+  	color:rgb(249, 132, 74);
 }
 
 footer{
