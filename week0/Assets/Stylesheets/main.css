@@ -56,7 +56,7 @@ body {
     border-radius:50px;
 }
 
-a ~ img{
+a[img]{
     text-decoration: none;
 }
 
