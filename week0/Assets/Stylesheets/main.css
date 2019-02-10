@@ -56,7 +56,7 @@ body {
     border-radius:50px;
 }
 
-p ~ a{
+a:has(> img){
     text-decoration: none;
 }
 
