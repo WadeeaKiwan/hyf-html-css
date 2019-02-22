@@ -19,7 +19,7 @@ body {
 
 .container {
   padding: 0px 15px 0px 15px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .main-nav {
@@ -56,11 +56,14 @@ body {
 
 a {
   text-decoration: none;
+  color: #333;
   display: block;
 }
 
-.logo {
-  margin: 16px 3% 20px 1%;
+header .logo {
+  margin: 16px 0% 15px;
+  float: left;
+  width: 48%;
 }
 
 .mobile-nav-container {
@@ -129,20 +132,22 @@ a {
 
 .front-mainbanner-text h1 {
   color: green;
-  font-size: 38px;
+  font-size: 36px;
   margin-top: 20px;
   margin-bottom: 10px;
-  line-height: 1em;
+  line-height: 1.1;
+  font-weight: 500;
 }
 
 .front-mainbanner-text h2 {
   font-size: 30px;
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .circle-orange-wrap {
-  padding: 30px;
+  bottom: 0;
   z-index: 2;
 }
 
@@ -200,6 +205,33 @@ img {
   color: white;
 }
 
+/*.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+*/
+
 .headline h2 {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -221,7 +253,33 @@ header .languages {
   font-weight: 400;
 }
 
-.slideout-open .slideout-menu {
+.front-news-text {
+  padding: 30px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.front-news-image img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.front-news-date {
+  color: #35733c;
+}
+
+.front-news-block-small a:hover {
+  color: #35733c;
+}
+
+/*.slideout-open .slideout-menu {
   display: block;
 }
 
@@ -257,7 +315,7 @@ header .languages {
   -moz-box-shadow: 5px 0 5px -4px rgba(50, 50, 47, 0.3);
   box-shadow: 5px 0 5px -4px rgba(50, 50, 47, 0.3);
   transform: translateX(-256px);
-}
+}*/
 
 .language-select ul.language-select-list,
 .language-checkbox,
@@ -266,7 +324,7 @@ header .languages {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 460px) {
   .eyes {
     display: initial;
   }
@@ -279,37 +337,44 @@ header .languages {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .circle-orange:hover,
+  .headline:hover {
+    text-decoration: underline;
+    text-decoration-color: #23527c;
+  }
+}
+
 @media only screen and (min-width: 650px) {
-  .container {
-    max-width: 750px;
+  .front-mainbanner-text {
+    padding: 10px 85px 15px;
   }
 
-  .front-mainbanner-text {
-    padding: 10px 30px 15px;
+  .front-mainbanner-text-wrap {
+    position: static;
+    padding: 0 40px;
   }
 
   .front-mainbanner-text .circle-orange-wrap {
     position: absolute;
-    right: -45px;
-    bottom: -40px;
+    right: -30px;
+    bottom: 0px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 970px;
+    width: 750px;
   }
 
-  .front-mainbanner-text .circle-orange-wrap {
-    position: absolute;
-    right: -50px;
-    bottom: -100px;
+  .headline h2 {
+    font-size: 50px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .container {
-    max-width: 1170px;
+    width: 970px;
   }
 
   .front-mainbanner-text .circle-orange-wrap {
@@ -354,6 +419,10 @@ header .languages {
   .main-nav,
   .language-select {
     display: initial;
+  }
+
+  .container {
+    width: 1170px;
   }
 
   .container-header {
