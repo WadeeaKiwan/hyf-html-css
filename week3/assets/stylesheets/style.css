@@ -212,33 +212,6 @@ img {
   color: white;
 }
 
-/*.carousel-control {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 15%;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: rgba(0, 0, 0, 0);
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-*/
-
 .headline h2 {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -328,48 +301,30 @@ p {
   width: 100%;
 }
 
-/*.slideout-open .slideout-menu {
-  display: block;
+.site-links {
+  padding: 100px 15px 60px;
+  text-align: center;
 }
-
-.slideout-menu ul {
-  list-style: none;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.list-inline li {
-  display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-.slideout-menu {
-  position: fixed;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  padding: 10px;
-  width: 256px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  display: none;
-  background-color: #fcfcfc;
-}
-
-.slideout-open .slideout-panel {
-  -webkit-box-shadow: 5px 0 5px -4px rgba(50, 50, 47, 0.3);
-  -moz-box-shadow: 5px 0 5px -4px rgba(50, 50, 47, 0.3);
-  box-shadow: 5px 0 5px -4px rgba(50, 50, 47, 0.3);
-  transform: translateX(-256px);
-}*/
 
 .language-select ul.language-select-list,
 .language-checkbox,
 .language-select {
   display: none;
+  text-decoration: none;
+}
+
+.footer-navigation {
+  padding: 70px 15px;
+  color: #fff;
+  background: url(https://muumimuseo.fi/wp-content/themes/muumimuseo/images/bg-footer-navi.jpg);
+  background-size: cover;
+  max-width: 100%;
+  font-size: 14px;
+}
+
+.footer-nav-block * {
+  color: #fff;
+  list-style: none;
   text-decoration: none;
 }
 
@@ -511,6 +466,11 @@ p {
     padding: 30px 15px;
   }
 
+  .site-links {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
   .footer-navigation .container {
     padding: 70px 0;
     display: flex;
@@ -598,17 +558,67 @@ p {
   }
 }
 
-.footer-navigation {
-  padding: 70px 15px;
-  color: #fff;
-  background: url(https://muumimuseo.fi/wp-content/themes/muumimuseo/images/bg-footer-navi.jpg);
-  background-size: cover;
-  max-width: 100%;
-  font-size: 14px;
+/*.slideout-open .slideout-menu {
+  display: block;
 }
 
-.footer-navi-block * {
-  color: #fff;
+.slideout-menu ul {
   list-style: none;
+  padding: 10px;
   text-decoration: none;
 }
+
+.list-inline li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.slideout-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  padding: 10px;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  background-color: #fcfcfc;
+}
+
+.slideout-open .slideout-panel {
+  -webkit-box-shadow: 5px 0 5px -4px rgba(50, 50, 47, 0.3);
+  -moz-box-shadow: 5px 0 5px -4px rgba(50, 50, 47, 0.3);
+  box-shadow: 5px 0 5px -4px rgba(50, 50, 47, 0.3);
+  transform: translateX(-256px);
+}*/
+
+/*.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+*/
