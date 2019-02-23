@@ -190,12 +190,16 @@ img {
   padding: 15px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   overflow: hidden;
 }
 
 .front-info-block-text {
   padding-top: 10px;
+}
+
+.front-info-block-card {
+  margin: 10px 0;
 }
 
 .eyes {
@@ -457,14 +461,20 @@ p {
     position: relative;
   }
 
+  .front-info-block {
+    padding: 15px;
+  }
+
   .front-info-block-text {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 85%;
     float: left;
-    width: calc(90.1% - 30px);
   }
 
   .front-info-block-card {
+    width: 5%;
     float: right;
-    width: calc(8.33333333% - 30px);
   }
 
   .front-news-block:nth-child(n + 2) {
