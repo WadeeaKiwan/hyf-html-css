@@ -377,7 +377,7 @@ p {
   .front-title-block {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 }
@@ -484,6 +484,21 @@ p {
   .front-event-block .circle-orange-wrap {
     width: 25%;
     float: right;
+  }
+
+  .content-block-container {
+    overflow: hidden;
+  }
+
+  .content-image,
+  .content-block-text {
+    position: relative;
+    width: 50%;
+    float: left;
+  }
+
+  .content-block-text {
+    padding: 30px 15px;
   }
 
   .footer-navigation .container {
