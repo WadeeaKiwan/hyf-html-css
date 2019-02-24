@@ -31,6 +31,7 @@ body {
   padding-bottom: 48px;
   margin-bottom: -48px;
 }
+
 .sub-menu {
   display: none;
   flex-direction: column;
@@ -44,6 +45,11 @@ body {
 
 .menu-item .sub-menu {
   padding: 10px;
+}
+
+.main-nav .menu-item a:hover,
+.footer-nav-block a:hover {
+  text-decoration: underline;
 }
 
 .menu-item .sub-menu a {
@@ -100,6 +106,13 @@ header .logo {
 
 .bar3 {
   padding-bottom: 0;
+}
+
+.language-select ul.language-select-list,
+.language-checkbox,
+.language-select {
+  display: none;
+  text-decoration: none;
 }
 
 .container:before,
@@ -192,6 +205,7 @@ img {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  font-weight: 400;
   overflow: hidden;
 }
 
@@ -307,26 +321,62 @@ p {
   text-align: center;
 }
 
-.language-select ul.language-select-list,
-.language-checkbox,
-.language-select {
-  display: none;
-  text-decoration: none;
-}
-
 .footer-navigation {
   padding: 70px 15px;
   color: #fff;
   background: url(https://muumimuseo.fi/wp-content/themes/muumimuseo/images/bg-footer-navi.jpg);
   background-size: cover;
-  max-width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
   font-size: 14px;
+}
+
+.footer-navigation .container {
+  padding: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.footer-nav-block {
+  margin-bottom: 30px;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
 }
 
 .footer-nav-block * {
   color: #fff;
   list-style: none;
   text-decoration: none;
+}
+
+.footer-nav-block h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.footer-company,
+.footer-nav-block span p {
+  margin: 0 0 10px;
+}
+
+.footer-phone {
+  margin: 20px 0;
+}
+
+.footer-navigation a.btn {
+  width: 140px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: 2px solid #fff;
+  letter-spacing: 1px;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .footer-logos {
@@ -341,8 +391,8 @@ p {
 }
 
 .footer-logos .some-icons ul {
-  /*display: flex;
-  flex-wrap: wrap;*/
+  display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
 }
 
@@ -364,10 +414,6 @@ p {
   padding-left: 5px;
 }
 
-.copyright-text {
-  text-align: right;
-}
-
 @media only screen and (min-width: 460px) {
   .eyes {
     display: initial;
@@ -379,9 +425,13 @@ p {
     justify-content: space-around;
     align-items: center;
   }
+
+  .footer-nav-block {
+    width: 50%;
+  }
 }
 
-@media screen and (max-width: 650px) {
+@media only screen and (max-width: 650px) {
   .front-mainbanner-text .circle-orange-wrap .circle-orange:hover,
   .headline:hover {
     text-decoration: underline;
@@ -428,9 +478,11 @@ p {
     font-size: 44px;
   }
 
+  .footer-nav-block {
+    width: calc(100% / 3);
+  }
+
   .footer-logos-block {
-    float: left;
-    position: relative;
     min-height: 1px;
     margin: 0;
     padding-right: 15px;
@@ -452,6 +504,10 @@ p {
 
   .footer-logos-block:nth-last-child() {
     width: calc(66% - 30px);
+  }
+
+  .copyright-text {
+    text-align: right;
   }
 }
 
@@ -537,12 +593,8 @@ p {
     flex-wrap: nowrap;
   }
 
-  .footer-navigation .container {
-    padding: 70px 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+  .footer-nav-block {
+    width: calc(100% / 5 - 40px);
   }
 
   .footer-logos-block:nth-child(1) {
@@ -553,7 +605,7 @@ p {
     width: 25%;
   }
 
-  .footer-logos-block:nth-child(2) {
+  .footer-logos-block:nth-child(3) {
     width: 41.66666667%;
   }
 }
@@ -566,6 +618,9 @@ p {
   .main-nav,
   .language-select {
     display: initial;
+  }
+
+  .main-nav > .menu-main-nav > .menu-item {
     text-transform: uppercase;
   }
 
