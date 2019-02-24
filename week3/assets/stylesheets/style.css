@@ -23,6 +23,12 @@ body {
   margin-right: auto;
 }
 
+header .logo {
+  margin: 16px 0% 15px;
+  float: left;
+  width: 48%;
+}
+
 .main-nav {
   display: none;
 }
@@ -32,28 +38,35 @@ body {
   margin-bottom: -48px;
 }
 
-.sub-menu {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 48px;
-  background: #35733c;
-  z-index: 1;
-  width: 200px;
-  border-top: 20px solid #dadada;
-}
-
-.menu-item .sub-menu {
-  padding: 10px;
-}
-
-.main-nav .menu-item a:hover,
+.menu-main-nav .menu-item a:hover,
 .footer-nav-block a:hover {
   text-decoration: underline;
 }
 
+.menu-main-nav .menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-main-nav .menu-item .sub-menu {
+  z-index: 2;
+  background-color: #35733c;
+  display: none;
+  position: absolute;
+  top: 83%;
+  text-transform: capitalize;
+  width: 220px;
+  padding: 6px;
+}
+
+.menu-main-nav .menu-item:hover .sub-menu {
+  display: flex;
+  flex-direction: column;
+}
+
 .menu-item .sub-menu a {
   color: #fff;
+  padding: 8px;
 }
 
 .menu-item .sub-menu a:hover {
@@ -65,12 +78,6 @@ a {
   text-decoration: none;
   color: #333;
   display: block;
-}
-
-header .logo {
-  margin: 16px 0% 15px;
-  float: left;
-  width: 48%;
 }
 
 .mobile-nav-container {
@@ -178,6 +185,7 @@ header .logo {
   font-size: 35px;
   padding-top: 30px;
 }
+
 .front-mainbanner-text .circle-orange-wrap .circle-orange {
   margin: 15px auto;
 }
@@ -316,6 +324,15 @@ p {
   width: 100%;
 }
 
+.content-block-text p a {
+  color: #35733c;
+}
+
+.content-block-text p a:hover {
+  color: #337ab7;
+  text-decoration: underline;
+}
+
 .site-links {
   padding: 100px 15px 60px;
   text-align: center;
@@ -394,6 +411,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  align-content: flex-start;
 }
 
 .footer-logos .some-icons ul li {
@@ -506,6 +524,10 @@ p {
     width: calc(66% - 30px);
   }
 
+  .footer-logos .some-icons ul li {
+    width: 50%;
+  }
+
   .copyright-text {
     text-align: right;
   }
@@ -607,6 +629,10 @@ p {
 
   .footer-logos-block:nth-child(3) {
     width: 41.66666667%;
+  }
+
+  .footer-logos .some-icons ul li {
+    width: initial;
   }
 }
 
