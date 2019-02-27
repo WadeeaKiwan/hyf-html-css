@@ -1,173 +1,183 @@
-body{
-	font-family: Cursive, Sans-Serif;
-	font-size: 18px;
-	line-height: 35px;
-	margin: 0 auto;
-	display: block;
-	width: 1200px;
-	height: 1950px;
+body {
+  font-family: Cursive, Sans-Serif;
+  font-size: 18px;
+  line-height: 35px;
+  margin: 0 auto;
+  display: block;
+  width: 1200px;
+  height: 2100px;
 }
 
-header{
-	position: relative;
-	margin: 0 auto;
-	background-color: #008fb3;
-	text-align: center;
-	width: 1200px;
-	height: 160px;
-	padding-top: 50px;
+.container {
+  overflow: hidden;
+  height: 90%;
+  background-color: beige;
 }
 
-#box{
-	border: 2px solid black;
-	position: relative;
-	margin: 0px 130px 0px 130px;
-	background-color: #f3f3d8;
+.header {
+  position: relative;
+  margin: 0 auto;
+  background-color: #008fb3;
+  text-align: center;
+  width: 1200px;
+  height: 160px;
+  padding-top: 50px;
 }
 
-h1{
-	font-style: italic;
+.box {
+  border: 2px solid black;
+  position: relative;
+  margin: 0px 130px 0px 130px;
+  background-color: #f3f3d8;
 }
 
-p{
-	color: beige;
+.box h1 {
+  font-style: italic;
 }
 
-nav{
-	position: relative;
-	width: 100%;
-	background-color: beige;
-	text-align: center;
+.header p,
+.profile p,
+.footer p {
+  color: beige;
 }
 
-nav a{
-	text-decoration: none;
-	padding: 5px;
+.nav {
+  position: relative;
+  width: 100%;
+  background-color: beige;
+  text-align: center;
 }
 
-nav a:hover{
-	background-color: #ccc;
+.nav a {
+  text-decoration: none;
+  padding: 5px;
 }
 
-aside{
-	width: 25%;
-	height: 100%;
-	float: left;
-	position: relative;
-	background-color: #008fb3;
-	color: beige;
+.nav a:hover {
+  background-color: #ccc;
 }
 
-#my-photo{
-	width: 300px;
-	padding-top: 44px;
+.profile {
+  width: 25%;
+  height: 100%;
+  float: left;
+  position: relative;
+  background-color: #008fb3;
 }
 
-.icons-info{
-	margin-right: 10px;
-}
-.info{
-	margin-left: 10px;
+.my-photo {
+  width: 300px;
+  padding-top: 44px;
 }
 
-p.languages{
-	text-align: center;
-	line-height: 2.5;
+.icons-info {
+  margin-right: 10px;
+}
+.info {
+  margin-left: 10px;
 }
 
-.icons{
-	text-align: center;
-	margin: 30px 0px 30px 0px;
+p.languages {
+  text-align: center;
+  line-height: 2.5;
+}
+
+.icons {
+  text-align: center;
+  margin: 30px 0px 30px 0px;
 }
 
 .icons a {
-	text-decoration: none;	
+  text-decoration: none;
 }
 
-.icons i{
-	display: inline-block;
-	font-size: 40px;
+.icons i {
+  display: inline-block;
+  font-size: 40px;
 }
 
-.icons i:hover{
-	color: #ccc;
+.icons i:hover {
+  color: #ccc;
 }
 
-main{
-	width: 75%;
-	height:100%;
-	float: right;
-	position: relative;
-	background-color: #f3f3d8;
+.part {
+  width: 75%;
+  float: right;
+  position: relative;
 }
 
-h2{
-	color: beige;
-	background-color: #008fb3;
-	padding:5px 5px 5px 20px;
-	margin: 0 auto;
+.profile h2,
+.part h2 {
+  color: beige;
+  background-color: #008fb3;
+  padding: 5px 5px 5px 20px;
+  margin: 0 auto;
 }
 
-table{
-	margin-left: 40px;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	text-align: left;
+table {
+  margin-left: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: left;
 }
 
-ul{
-	margin-left: 40px;
+ul {
+  margin-left: 40px;
 }
 
-td{
-	padding-left: 30px;
+td {
+  padding-left: 30px;
 }
 
-.learning{
-	width: 900px;
-	height: 246px;
-	top: 0;
-	background-color: beige;
+.learning {
+  width: 900px;
+  height: 246px;
+  top: 0;
+  background-color: beige;
 }
 
-.list{
-	position: relative;
-	width: 50%;
-	height: 100%;
-	float: left;
-	background-color: inherit;	
+.list {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-color: inherit;
 }
 
-.media{
-	position: relative;
-	width: 50%;
-	padding: 0; 
-	height: 100%;
-	float: right;
-	background-color: inherit;
+.media {
+  position: relative;
+  width: 50%;
+  padding: 0;
+  height: 100%;
+  float: right;
+  background-color: inherit;
 }
 
-iframe{
-	width:300px; 
-	height:200px;
-	padding: 17px;
+iframe {
+  width: 300px;
+  height: 200px;
+  padding: 17px;
 }
 
-.media iframe{
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 80%;
-	height: 80%;
+.media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
 }
 
-li a:hover{
-  	color:rgb(249, 132, 74);
+li a:hover {
+  color: rgb(249, 132, 74);
 }
 
-footer{
-	width: 100%;
-	margin-bottom: 0;
-	text-align: center;
-	background-color: #008fb3;
+.footer {
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #008fb3;
+}
+
+.footer p {
+  margin: 0;
 }
